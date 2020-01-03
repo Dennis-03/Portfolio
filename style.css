@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(-45deg, #3539ff, #af245a, #23a6d5, #23d5ab);
+    background-size: 6000% 6000%;
+    animation: gradientBG 50s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    75% {
+        background-position: 50% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    box-shadow: 1px 1px 1px 1px;
+    color: white;
+    position: fixed;
+}
+
+.header>ul {
+    margin-left: 200px;
+}
+
+.header>ul>li {
+    float: left;
+    list-style: none;
+    margin: 15px 50px;
+    font-size: 20px;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    /* background-color: #ffffff; */
+    margin: auto;
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.box {
+    padding: 15px;
+    margin-right: 75px;
+    margin-top: 25px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 20px 1px;
+    border-radius: 10px;
+    color: #000000;
+    width: 600px;
+}
+
+.box>span {
+
+    font-size: 1.5vw;
+
+
+}
+
+
+.hero-image {
+    /* margin-top: 100px; */
+    background-image: url("img/t_hero.png");
+    background-color: #cccccc;
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 1000px;
+    font-size: 3.5vw;
+
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px #ffffff;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+}
+
+.container>div>h1 {
+    font-size: 2.2vw;
+
+}
+
+.container>div>h2 {
+    font-size: 1.5vw;
+
+}
+
+
+.edu {
+    /* min-width: 500px; */
+
+}
+
+.edu>h1 {
+    margin-top: 10px;
+}
+
+hr {
+    margin: 10px 0px;
+    height: 5px;
+}
+
+.lang {
+    /* min-width: 400px; */
+}
+
+.bar {
+    width: 100%;
+    height: 25px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px inset;
+}
+
+.bar>div {
+    background-color: #23a6d5;
+    height: 100%;
+    box-shadow: 1px 1px 1px 1px inset;
+    border-radius: 25px;
+}
+
+.inter {
+    /* width: 375px; */
+    /* margin-right: 0; */
+}
+
+.inter>span {
+    font-size: 1.1vw;
+}
+
+.inter>hr {
+    margin-top: 40px;
+}
