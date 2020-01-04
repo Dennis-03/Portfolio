@@ -6,31 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <!-- <div class="header">
+    <div class="header">
         <ul>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#edu">
+                <li>Education</li>
+            </a>
+            <a href="#lang" onclick="load()">
+                <li>Languages</li>
+            </a>
+            <a href="#intern">
+                <li>Intern</li>
+            </a>
+            <a href="#li">
+                <li>Achievements</li>
+            </a>
+            <a href="#li">
+                <li>Projects</li>
+            </a>
+            <a href="#li">
+                <li>Contact</li>
+            </a>
+
+
         </ul>
-    </div> -->
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>I am Augustin Dennis F</h1>
-            <h3 style="font-size: 25px;">--Web Developer</h3>
+    </div>
+    <div class="hero-image" id="home">
+
+    </div>
+    <div class="hero-text">
+        <div><span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
         </div>
     </div>
-    <div class="container">
+    </div>
+    <div class="container ">
 
-        <div class="edu box">
-            <h1>EDUCATION</h1>
+        <div class="box" id="edu">
+            <h1> <i class="fa fa-graduation-cap"></i> EDUCATION </h1>
             <hr>
             <h2 style="font-weight: bold;">B.E. - Computer Science</h2><br />
             <span>(2017-2021)</span><br />
@@ -48,36 +68,37 @@
             <span>Obtained (458/500) -91.6%</span><br />
 
         </div>
-        <div class="lang box">
-            <h1>Languages</h1>
+        <div class="box" id="lang">
+            <h1><i class="fa fa-code"></i> Languages </h1>
+            <br />
             <hr>
             <h2>C - (8/10)</h2>
-            <div class="bar">
+            <div class="bar loadal">
                 <div style="width: 80%;"></div>
             </div>
             <hr>
             <h2>Python - (7/10)</h2>
-            <div class="bar">
+            <div class="bar loadal">
                 <div style="width: 70%;"></div>
             </div>
             <hr>
             <h2>HTML,CSS - (9/10)</h2>
-            <div class="bar">
+            <div class="bar loadal">
                 <div style="width: 90%;"></div>
             </div>
             <hr>
             <h2>JavaScript - (8.5/10)</h2>
-            <div class="bar">
+            <div class="bar loadal">
                 <div style="width: 85%;"></div>
             </div>
             <hr>
             <h2>Java - (6.5/10)</h2>
-            <div class="bar">
+            <div class="bar loadal">
                 <div style="width: 65%;"></div>
             </div>
         </div>
-        <div class="inter box">
-            <h1>Intership/Inplant</h1>
+        <div class="box" id="intern">
+            <h1> <i class="fa fa-clipboard"></i> Intership/Inplant </h1>
             <hr>
             <h3>Code bind technologies</h3>
             <span>Web Development (5 days)</span>
@@ -94,10 +115,123 @@
         </div>
 
     </div>
+    <div class="achieve box">
+        <h1> <i class="fa fa-trophy"></i> Achievements <i class="fas fa-awards"></i></h1>
+        <hr>
+        <p> <i class="fa fa-trophy"></i>
+            Awarded Pass with Merit in Cambridge English Language assement , 2018.</p>
+        <p> <i class="fa fa-trophy"></i>
+            Achiever in VIT Gravitas Robo War.</p>
+        <p> <i class="fa fa-trophy"></i>
+            Won Inidan Level Open Coding Contest</p>
+        <p> <i class="fa fa-trophy"></i>
+            Secured Second place in SSN Hackathon</p>
+        <p> <i class="fa fa-trophy"></i>Participated in Cognizant Big idea .</p>
+        <p> <i class="fa fa-trophy"></i>
+            Was in Top 10 Syndicate Bank's SYND INNOVATE </p>
+        <p><i class="fa fa-trophy"></i>Was a part of World Record on biggest Hacking seminar.</p>
+        <p><i class="fa fa-trophy"></i>Silver topper in ABACUS (Brainobrain) Twice (2009,2011).</p>
 
+    </div>
+    <div class="project">
+        <h1> <i class="fa fa-language"></i> Projects <i class="fa fa-language"></i></h1>
 
+        <div class="view inner">
+            <img src="img/cryptrix.jfif" height="200px">
+            <div class="mask">
+                <h2>Crytrix</h2>
+                <p>College Symposium Webite using HTML,CSS,JS,3-MinJs,Firebase </p>
+                <a href="https://cryptrix2k19.ml/" class="info">link</a>
+            </div>
+        </div>
+        <div class="view inner">
+            <img src="img/flames.jpg" height="200px" width="300px">
+            <div class="mask">
+                <h2>FLAMES</h2>
+                <p>A simple Webite to calculate Flames using HTML,CSS,JS,Firebase </p>
+                <a href="https://flamescal.herokuapp.com/" class="info">link</a>
+            </div>
+        </div>
+        <div class="view inner">
+            <img src="img/calculator.jpeg" height="200px" width="300px">
+            <div class="mask">
+                <h2>SCI-FI CALC</h2>
+                <p>A simple Webite to calculate Scitific calculations using HTML,CSS,JS </p>
+                <a href="https://flamescal.herokuapp.com/" class="info">link</a>
+            </div>
+        </div>
+        <div class="view inner">
+            <img src="img/Main.png" height="200px" width="300px">
+            <div class="mask">
+                <h2>Med-Chain</h2>
+                <p>The website is used to avoid overdosing of medicines by Using Block-chain </p>
+                <a href="http://medchain.ml/" class="info">link</a>
+            </div>
+        </div>
+        <div class="view inner">
+            <img src="img/synd.jfif" height="200px" width="300px">
+            <div class="mask">
+                <h2>Synd</h2>
+                <p>This website is used to improve the customer experience by communicating with a bot which can preety
+                    much do everything </p>
+                <a href="http://medchain.ml/" class="info">link</a>
+            </div>
+        </div>
+        <div class="view inner">
+            <img src="img/todo.jpg" height="200px" width="300px">
+            <div class="mask">
+                <h2>To-do</h2>
+                <p>This to do list is used to keep trak of things to be done Using MongoDB and advanced search </p>
+                <a href="http://medchain.ml/" class="info">link</a>
+            </div>
+        </div>
 
-    <!-- <script src="app.js"></script> -->
+        <div class="view inner">
+            <img src="img/amruth.jpg" height="200px" width="300px">
+            <div class="mask">
+                <h2>Amruth</h2>
+                <p>This website Promotes the online market for farmers</p>
+                <a href="https://d9grbonjnmsefsg6qzztxa-on.drv.tw/AICTE/Main.html" class="info">link</a>
+            </div>
+        </div>
+        <div class="view inner">
+            <img src="img/robot.jpg" height="200px" width="300px">
+            <div class="mask">
+                <h2>Obstacle Avoidance Robot</h2>
+                <p>The objective of the bot is to stop when an obstacle is in front even if throtlled</p>
+                <a href="https://d9grbonjnmsefsg6qzztxa-on.drv.tw/AICTE/Main.html" class="info">link</a>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="phone">
+            <h1>Phone</h1>
+            <p>+91 8122610665</p>
+            <p>+91 9840546825</p>
+        </div>
+        <div class="social">
+            <h1>Social Media</h1>
+            <a href="https://www.instagram.com/dennis.cgi">
+                <div class="fa fa-instagram "></div>
+            </a>
+            <a href="https://www.facebook.com/augustindennis10">
+                <div class="fa fa-facebook "></div>
+            </a>
+            <a href="https://github.com/Dennisovich-03">
+                <div class="fa fa-github "></div>
+            </a>
+            <a href="#">
+                <div class="fa fa-linkedin "></div>
+            </a>
+        </div>
+        <div class="mail">
+            <h1>Mail</h1>
+            <p>augustinwade003@gmail.com</p>
+            <p>adennis9993@gmail.com</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
