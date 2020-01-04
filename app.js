@@ -1,5 +1,13 @@
-// function([string1, string2],target id,[color1,color2])    
-consoleText(['Augustin Dennis F', 'You can call me Dennis', 'Creativity and Coding'], 'text', ['darkblue', 'rebeccapurple', 'black']);
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+consoleText(['Hi,Augustin Dennis F !', 'Call me Dennis !!', 'Creativity and Coding !!!'], 'text', ['darkblue', 'rebeccapurple', 'black']);
 
 function consoleText(words, id, colors) {
     if (colors === undefined) colors = ['#fff'];
@@ -55,5 +63,10 @@ function load() {
     element.classList.remove("loadal");
 
     element.classList.toggle("load");
+
+}
+
+function bounce(b) {
+    b.classList.toggle("anim");
 
 }

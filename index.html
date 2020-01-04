@@ -11,45 +11,43 @@
 </head>
 
 <body>
-    <div class="header">
-        <ul>
-            <a href="#home">
-                <li>Home</li>
-            </a>
-            <a href="#edu">
-                <li>Education</li>
-            </a>
-            <a href="#lang" onclick="load()">
-                <li>Languages</li>
-            </a>
-            <a href="#intern">
-                <li>Intern</li>
-            </a>
-            <a href="#li">
-                <li>Achievements</li>
-            </a>
-            <a href="#li">
-                <li>Projects</li>
-            </a>
-            <a href="#li">
-                <li>Contact</li>
-            </a>
-
-
-        </ul>
+    <div class="topnav" id="myTopnav">
+        <a href="#home">
+            Home
+        </a>
+        <a href="#edu">
+            Education
+        </a>
+        <a href="#lang" onclick="load()">
+            Languages
+        </a>
+        <a href="#intern">
+            Intern
+        </a>
+        <a href="#achieve">
+            Achievements
+        </a>
+        <a href="#projects">
+            Projects
+        </a>
+        <a href="#contact">
+            Contact
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
     <div class="hero-image" id="home">
-
-    </div>
-    <div class="hero-text">
-        <div><span id='text'></span>
-            <div class='console-underscore' id='console'>&#95;</div>
+        <div class="hero-text">
+            <div><span id='text'></span>
+                <div class='console-underscore' id='console'>&#95;</div>
+            </div>
         </div>
     </div>
-    </div>
+
     <div class="container ">
 
-        <div class="box" id="edu">
+        <div class="box" id="edu" onclick="bounce(this)">
             <h1> <i class="fa fa-graduation-cap"></i> EDUCATION </h1>
             <hr>
             <h2 style="font-weight: bold;">B.E. - Computer Science</h2><br />
@@ -68,36 +66,36 @@
             <span>Obtained (458/500) -91.6%</span><br />
 
         </div>
-        <div class="box" id="lang">
+        <div class="box" id="lang" onclick="bounce(this)">
             <h1><i class="fa fa-code"></i> Languages </h1>
             <br />
             <hr>
             <h2>C - (8/10)</h2>
-            <div class="bar loadal">
+            <div class="bar loadal" id="load">
                 <div style="width: 80%;"></div>
             </div>
             <hr>
             <h2>Python - (7/10)</h2>
-            <div class="bar loadal">
+            <div class="bar loadal" id="load">
                 <div style="width: 70%;"></div>
             </div>
             <hr>
             <h2>HTML,CSS - (9/10)</h2>
-            <div class="bar loadal">
+            <div class="bar loadal" id="load">
                 <div style="width: 90%;"></div>
             </div>
             <hr>
             <h2>JavaScript - (8.5/10)</h2>
-            <div class="bar loadal">
+            <div class="bar loadal" id="load">
                 <div style="width: 85%;"></div>
             </div>
             <hr>
             <h2>Java - (6.5/10)</h2>
-            <div class="bar loadal">
+            <div class="bar loadal" id="load">
                 <div style="width: 65%;"></div>
             </div>
         </div>
-        <div class="box" id="intern">
+        <div class="box" id="intern" onclick="bounce(this)">
             <h1> <i class="fa fa-clipboard"></i> Intership/Inplant </h1>
             <hr>
             <h3>Code bind technologies</h3>
@@ -115,7 +113,7 @@
         </div>
 
     </div>
-    <div class="achieve box">
+    <div class="achieve box" id="achieve" onclick="bounce(this)">
         <h1> <i class="fa fa-trophy"></i> Achievements <i class="fas fa-awards"></i></h1>
         <hr>
         <p> <i class="fa fa-trophy"></i>
@@ -133,7 +131,7 @@
         <p><i class="fa fa-trophy"></i>Silver topper in ABACUS (Brainobrain) Twice (2009,2011).</p>
 
     </div>
-    <div class="project">
+    <div class="project" id="projects">
         <h1> <i class="fa fa-language"></i> Projects <i class="fa fa-language"></i></h1>
 
         <div class="view inner">
@@ -204,7 +202,10 @@
         </div>
 
     </div>
-    <footer>
+    <div class="renders">
+
+    </div>
+    <footer id="contact">
         <div class="phone">
             <h1>Phone</h1>
             <p>+91 8122610665</p>
